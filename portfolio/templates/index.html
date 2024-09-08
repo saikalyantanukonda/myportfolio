@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/ss.jpeg" type="image/x-icon">
+    <link rsel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/collection/components/icon/icon.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <script src="{% static 'js/main.js' %}"></script>
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">SOFWARE DEVELOPER</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="featured-text-btn">
+            <a href="#about" class="btn">About Me <i class="fas fa-arrow-right"></i></a>
+            <a href="{% static 'kalyan_Resume.pdf' %}" class="btn" download="Kalyan_Resume.pdf">Download CV <i class="fas fa-download"></i></a>
+            <div class="nav-menu-btn">
+                <i class="fas fa-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </div>
+      </nav>
+
+      <main class="wrapper">
+        <section class="featured-box" id="home">
+            <div class="featured-text">
+                <div class="featured-text-card">
+                    <span>Tanukonda Sai Kalyan</span>
+                </div>
+                <div class="featured-name">
+                    <p>I'm <span class="typedText"></span></p>
+                </div>
+                <div class="featured-text-info">
+                    <p>Enthusiastic and eager-to-learn software developer with a strong foundation in programming principles and a passion for creating innovative software solutions.</p>
+                </div>
+                <div class="featured-text-btn">
+                    <button class="btn blue-btn">Hire Me</button>
+                    <a href="{% static 'kalyan_Resume.pdf' %}" class="btn" download="Kalyan_Resume.pdf">Download CV <i class="fas fa-download"></i></a>
+                </div>
+                <div class="social_icons">
+                    <a href="https://www.linkedin.com/in/sai-kalyan-tanukonda-639b94299" class="icon" target="_blank">
+                        <i class="bi bi-linkedin"></i><br><span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/dashboard" class="icon" target="_blank">
+                        <i class="bi bi-github"></i><br><span>GitHub</span>
+                    </a>
+                    <a href="https://www.instagram.com/" class="icon" target="_blank">
+                        <i class="bi bi-instagram"></i><br><span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="featured-image">
+                <div class="image">
+                    <img src="{% static 'images/kk.jpg' %}" alt="Image KK">
+                </div>  
+        </section>
+    </main>
+    
+       <div class="scroll-icon-box">
+        <a href="#about" class="scroll-btn">
+            <i class="uil uil-mouse-alt"></i>
+            <p>Scroll Down</p>
+        </a>
+      </div>
+
+       
+
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I am a BTech graduate with a strong passion for web development and software engineering. As a fresher, I am eager to leverage my skills in HTML, CSS, JavaScript, and SQL to contribute to innovative projects and grow in the industry.</p>
+                    <div class="about-btn">
+                        <a href="assets/resume.pdf" class="btn" download="kalyan_Resume.pdf">Download CV <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>SQL</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>AWS cloud computing</h3>
+                <label>Disaster recovery using CRR and EFS</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Short Term Python FSD Internship</h3>
+                <label>Personal Portfolio Website</label>
+            </div>
+          </div>
+       </section>
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: saikalyantanukonda@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Phone: 8978474118</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+    </main>
+
+    <footer>
+        <div class="top-footer">
+            <p>Tanukonda Sai Kalyan.</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social_icons">
+            <a href="https://www.linkedin.com/in/sai-kalyan-tanukonda-639b94299" class="icon" target="_blank">
+                <i class="bi bi-linkedin"></i><br><span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/dashboard" class="icon" target="_blank">
+                <i class="bi bi-github"></i><br><span>GitHub</span>
+            </a>
+            <a href="https://www.instagram.com/" class="icon" target="_blank">
+                <i class="bi bi-instagram"></i><br><span>Instagram</span>
+            </a>
+        </div>
+    </footer>
+   </div>
+   <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Import Poppins font once */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Root Variables */
+:root {
+    --primary: #008c45;
+    --secondary: #0045e0;
+    --dark: #444444;
+    --light: #f4f4f4;
+    --bg-img: url('../images/bg.jpg');
+    --main-font: 'Poppins', sans-serif;
+    --radial-gradient: radial-gradient(circle, #ffffff, #ff0000, #0000ff, #008c45);
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+body {
+    background-image: var(--bg-img);
+    background-size: cover;
+    background-position: center;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Social Icons */
+.social_icons .icon {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: var(--light);
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Featured Image */
+.featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
